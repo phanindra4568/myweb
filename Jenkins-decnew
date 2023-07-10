@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'javahome2', 'url: https://github.com/phanindra4568/myweb.git'
+                git credentialsId: 'javahome2', url: 'https://github.com/phanindra4568/myweb.git'
             }
         }
         stage("Maven Build"){
